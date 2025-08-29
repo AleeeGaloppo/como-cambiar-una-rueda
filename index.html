@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guía Simple</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-gradient-to-br from-blue-50 to-indigo-100 min-h-screen">
+    <div class="container mx-auto px-6 py-12 max-w-4xl">
+        <!-- Título Principal -->
+        <div class="text-center mb-16">
+            <div class="flex justify-center mb-6">
+                <svg class="w-20 h-20 text-indigo-600" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M12 2C6.48 2 2 6.48 2 12S6.48 22 12 22 22 17.52 22 12 17.52 2 12 2ZM12 20C7.59 20 4 16.41 4 12S7.59 4 12 4 20 7.59 20 12 16.41 20 12 20Z"/>
+                    <circle cx="12" cy="12" r="3"/>
+                    <circle cx="7" cy="12" r="1.5"/>
+                    <circle cx="17" cy="12" r="1.5"/>
+                    <circle cx="12" cy="7" r="1.5"/>
+                    <circle cx="12" cy="17" r="1.5"/>
+                </svg>
+            </div>
+            <h1 class="text-5xl font-bold text-gray-800 mb-4">How to Change a Tire</h1>
+            <p class="text-xl text-gray-600">Follow these 8 steps to change your car tire safely - Click each card to see Spanish translation</p>
+        </div>
+
+        <!-- Lista de Instrucciones -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <!-- Instrucción 1 -->
+            <div class="flip-card cursor-pointer" onclick="flipCard(1)">
+                <div class="flip-card-inner" id="card-1">
+                    <div class="flip-card-front bg-gradient-to-br from-pink-500 to-rose-600 rounded-3xl p-8 text-white shadow-xl">
+                        <div class="flex items-center mb-4">
+                            <div class="w-12 h-12 bg-white bg-opacity-20 rounded-full flex items-center justify-center text-white font-bold text-xl mr-4">1</div>
+                            <svg class="w-10 h-10 text-white opacity-80" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M18.92 6.01C18.72 5.42 18.16 5 17.5 5H6.5C5.84 5 5.28 5.42 5.08 6.01L3 12V20C3 20.55 3.45 21 4 21H5C5.55 21 6 20.55 6 20V19H18V20C18 20.55 18.45 21 19 21H20C20.55 21 21 20.55 21 20V12L18.92 6.01ZM6.5 16C5.67 16 5 15.33 5 14.5S5.67 13 6.5 13 8 13.67 8 14.5 7.33 16 6.5 16ZM17.5 16C16.67 16 16 15.33 16 14.5S16.67 13 17.5 13 19 13.67 19 14.5 18.33 16 17.5 16ZM5 11L6.5 6.5H17.5L19 11H5Z"/>
+                            </svg>
+                        </div>
+                        <h3 class="text-2xl font-bold mb-3">Park the car on a flat place</h3>
+                        <p class="text-pink-100">Park the car on a flat place, and set the handbrake. Turn on hazard lights for safety.</p>
+                    </div>
+                    <div class="flip-card-back bg-gradient-to-br from-pink-600 to-rose-700 rounded-3xl p-8 text-white shadow-xl">
+                        <div class="flex items-center mb-4">
+                            <div class="w-12 h-12 bg-white bg-opacity-20 rounded-full flex items-center justify-center text-white font-bold text-xl mr-4">1</div>
+                            <svg class="w-10 h-10 text-white opacity-80" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M18.92 6.01C18.72 5.42 18.16 5 17.5 5H6.5C5.84 5 5.28 5.42 5.08 6.01L3 12V20C3 20.55 3.45 21 4 21H5C5.55 21 6 20.55 6 20V19H18V20C18 20.55 18.45 21 19 21H20C20.55 21 21 20.55 21 20V12L18.92 6.01ZM6.5 16C5.67 16 5 15.33 5 14.5S5.67 13 6.5 13 8 13.67 8 14.5 7.33 16 6.5 16ZM17.5 16C16.67 16 16 15.33 16 14.5S16.67 13 17.5 13 19 13.67 19 14.5 18.33 16 17.5 16ZM5 11L6.5 6.5H17.5L19 11H5Z"/>
+                            </svg>
+                        </div>
+                        <h3 class="text-2xl font-bold mb-3">Busca un lugar seguro</h3>
+                        <p class="text-pink-100">Detén el auto en una superficie plana y firme, lejos del tráfico. Enciende las luces de emergencia.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Instrucción 2 -->
+            <div class="flip-card cursor-pointer" onclick="flipCard(2)">
+                <div class="flip-card-inner" id="card-2">
+                    <div class="flip-card-front bg-gradient-to-br from-blue-500 to-cyan-600 rounded-3xl p-8 text-white shadow-xl">
+                        <div class="flex items-center mb-4">
+                            <div class="w-12 h-12 bg-white bg-opacity-20 rounded-full flex items-center justify-center text-white font-bold text-xl mr-4">2</div>
+                            <svg class="w-10 h-10 text-white opacity-80" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M22 9V7L20 5H4L2 7V9C2 9.55 2.45 10 3 10H4V15C4 16.1 4.9 17 6 17H18C19.1 17 20 16.1 20 15V10H21C21.55 10 22 9.55 22 9ZM18 15H6V10H18V15ZM5.5 7.5H18.5L19.5 8.5H4.5L5.5 7.5Z"/>
+                            </svg>
+                        </div>
+                        <h3 class="text-2xl font-bold mb-3">Loosen the lug nuts</h3>
+                        <p class="text-blue-100">Loosen the lug nuts of the wheel you want to change (don't remove them completely yet).</p>
+                    </div>
+                    <div class="flip-card-back bg-gradient-to-br from-blue-600 to-cyan-700 rounded-3xl p-8 text-white shadow-xl">
+                        <div class="flex items-center mb-4">
+                            <div class="w-12 h-12 bg-white bg-opacity-20 rounded-full flex items-center justify-center text-white font-bold text-xl mr-4">2</div>
+                            <svg class="w-10 h-10 text-white opacity-80" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M22 9V7L20 5H4L2 7V9C2 9.55 2.45 10 3 10H4V15C4 16.1 4.9 17 6 17H18C19.1 17 20 16.1 20 15V10H21C21.55 10 22 9.55 22 9ZM18 15H6V10H18V15ZM5.5 7.5H18.5L19.5 8.5H4.5L5.5 7.5Z"/>
+                            </svg>
+                        </div>
+                        <h3 class="text-2xl font-bold mb-3">Afloja las tuercas</h3>
+                        <p class="text-blue-100">Con la llave de ruedas, afloja las tuercas de la rueda dañada (sin quitarlas completamente aún).</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Instrucción 3 -->
+            <div class="flip-card cursor-pointer" onclick="flipCard(3)">
+                <div class="flip-card-inner" id="card-3">
+                    <div class="flip-card-front bg-gradient-to-br from-green-500 to-emerald-600 rounded-3xl p-8 text-white shadow-xl">
+                        <div class="flex items-center mb-4">
+                            <div class="w-12 h-12 bg-white bg-opacity-20 rounded-full flex items-center justify-center text-white font-bold text-xl mr-4">3</div>
+                            <svg class="w-10 h-10 text-white opacity-80" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M1 21H23L12 2L1 21ZM13 18H11V16H13V18ZM13 14H11V10H13V14Z"/>
+                            </svg>
+                        </div>
+                        <h3 class="text-2xl font-bold mb-3">Place the hydraulic jack</h3>
+                        <p class="text-green-100">Place the hydraulic jack on the vehicle jack point under the car frame.</p>
+                    </div>
+                    <div class="flip-card-back bg-gradient-to-br from-green-600 to-emerald-700 rounded-3xl p-8 text-white shadow-xl">
+                        <div class="flex items-center mb-4">
+                            <div class="w-12 h-12 bg-white bg-opacity-20 rounded-full flex items-center justify-center text-white font-bold text-xl mr-4">3</div>
+                            <svg class="w-10 h-10 text-white opacity-80" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M1 21H23L12 2L1 21ZM13 18H11V16H13V18ZM13 14H11V10H13V14Z"/>
+                            </svg>
+                        </div>
+                        <h3 class="text-2xl font-bold mb-3">Coloca el gato hidráulico</h3>
+                        <p class="text-green-100">Coloca el gato en el punto de apoyo del auto debajo del chasis del vehículo.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Instrucción 4 -->
+            <div class="flip-card cursor-pointer" onclick="flipCard(4)">
+                <div class="flip-card-inner" id="card-4">
+                    <div class="flip-card-front bg-gradient-to-br from-purple-500 to-violet-600 rounded-3xl p-8 text-white shadow-xl">
+                        <div class="flex items-center mb-4">
+                            <div class="w-12 h-12 bg-white bg-opacity-20 rounded-full flex items-center justify-center text-white font-bold text-xl mr-4">4</div>
+                            <svg class="w-10 h-10 text-white opacity-80" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M22.61 19L13.22 9.61C14.14 7.29 13.53 4.54 11.5 2.5C9.44 0.44 6.65 0.06 4.27 1.38L7.96 5.07L5.07 7.96L1.38 4.27C0.06 6.65 0.44 9.44 2.5 11.5C4.54 13.53 7.29 14.14 9.61 13.22L19 22.61C19.54 23.15 20.46 23.15 21 22.61L22.61 21C23.15 20.46 23.15 19.54 22.61 19Z"/>
+                            </svg>
+                        </div>
+                        <h3 class="text-2xl font-bold mb-3">Lift the vehicle</h3>
+                        <p class="text-purple-100">Lift the vehicle with the hydraulic jack until the damaged wheel is off the ground.</p>
+                    </div>
+                    <div class="flip-card-back bg-gradient-to-br from-purple-600 to-violet-700 rounded-3xl p-8 text-white shadow-xl">
+                        <div class="flex items-center mb-4">
+                            <div class="w-12 h-12 bg-white bg-opacity-20 rounded-full flex items-center justify-center text-white font-bold text-xl mr-4">4</div>
+                            <svg class="w-10 h-10 text-white opacity-80" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M22.61 19L13.22 9.61C14.14 7.29 13.53 4.54 11.5 2.5C9.44 0.44 6.65 0.06 4.27 1.38L7.96 5.07L5.07 7.96L1.38 4.27C0.06 6.65 0.44 9.44 2.5 11.5C4.54 13.53 7.29 14.14 9.61 13.22L19 22.61C19.54 23.15 20.46 23.15 21 22.61L22.61 21C23.15 20.46 23.15 19.54 22.61 19Z"/>
+                            </svg>
+                        </div>
+                        <h3 class="text-2xl font-bold mb-3">Levanta el vehículo</h3>
+                        <p class="text-purple-100">Levanta el vehículo con el gato hidráulico hasta que la rueda dañada no toque el suelo.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Instrucción 5 -->
+            <div class="flip-card cursor-pointer" onclick="flipCard(5)">
+                <div class="flip-card-inner" id="card-5">
+                    <div class="flip-card-front bg-gradient-to-br from-orange-500 to-amber-600 rounded-3xl p-8 text-white shadow-xl">
+                        <div class="flex items-center mb-4">
+                            <div class="w-12 h-12 bg-white bg-opacity-20 rounded-full flex items-center justify-center text-white font-bold text-xl mr-4">5</div>
+                            <svg class="w-10 h-10 text-white opacity-80" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12 2L14 9H21L15.5 13.5L17.5 21L12 16.5L6.5 21L8.5 13.5L3 9H10L12 2Z"/>
+                            </svg>
+                        </div>
+                        <h3 class="text-2xl font-bold mb-3">Remove the wheel</h3>
+                        <p class="text-orange-100">Remove the loosened lug nuts and take off the wheel completely.</p>
+                    </div>
+                    <div class="flip-card-back bg-gradient-to-br from-orange-600 to-amber-700 rounded-3xl p-8 text-white shadow-xl">
+                        <div class="flex items-center mb-4">
+                            <div class="w-12 h-12 bg-white bg-opacity-20 rounded-full flex items-center justify-center text-white font-bold text-xl mr-4">5</div>
+                            <svg class="w-10 h-10 text-white opacity-80" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12 2L14 9H21L15.5 13.5L17.5 21L12 16.5L6.5 21L8.5 13.5L3 9H10L12 2Z"/>
+                            </svg>
+                        </div>
+                        <h3 class="text-2xl font-bold mb-3">Quita la rueda</h3>
+                        <p class="text-orange-100">Termina de quitar las tuercas aflojadas y retira la rueda completamente.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Instrucción 6 -->
+            <div class="flip-card cursor-pointer" onclick="flipCard(6)">
+                <div class="flip-card-inner" id="card-6">
+                    <div class="flip-card-front bg-gradient-to-br from-teal-500 to-cyan-600 rounded-3xl p-8 text-white shadow-xl">
+                        <div class="flex items-center mb-4">
+                            <div class="w-12 h-12 bg-white bg-opacity-20 rounded-full flex items-center justify-center text-white font-bold text-xl mr-4">6</div>
+                            <svg class="w-10 h-10 text-white opacity-80" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12 2C6.48 2 2 6.48 2 12S6.48 22 12 22 22 17.52 22 12 17.52 2 12 2ZM12 20C7.59 20 4 16.41 4 12S7.59 4 12 4 20 7.59 20 12 16.41 20 12 20ZM12 6C8.69 6 6 8.69 6 12S8.69 18 12 18 18 15.31 18 12 15.31 6 12 6Z"/>
+                            </svg>
+                        </div>
+                        <h3 class="text-2xl font-bold mb-3">Place the spare wheel</h3>
+                        <p class="text-teal-100">Place the spare wheel on and tighten by hand the lug nuts.</p>
+                    </div>
+                    <div class="flip-card-back bg-gradient-to-br from-teal-600 to-cyan-700 rounded-3xl p-8 text-white shadow-xl">
+                        <div class="flex items-center mb-4">
+                            <div class="w-12 h-12 bg-white bg-opacity-20 rounded-full flex items-center justify-center text-white font-bold text-xl mr-4">6</div>
+                            <svg class="w-10 h-10 text-white opacity-80" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12 2C6.48 2 2 6.48 2 12S6.48 22 12 22 22 17.52 22 12 17.52 2 12 2ZM12 20C7.59 20 4 16.41 4 12S7.59 4 12 4 20 7.59 20 12 16.41 20 12 20ZM12 6C8.69 6 6 8.69 6 12S8.69 18 12 18 18 15.31 18 12 15.31 6 12 6Z"/>
+                            </svg>
+                        </div>
+                        <h3 class="text-2xl font-bold mb-3">Coloca la rueda de repuesto</h3>
+                        <p class="text-teal-100">Monta la rueda de repuesto en su lugar y coloca las tuercas apretándolas a mano.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Instrucción 7 -->
+            <div class="flip-card cursor-pointer" onclick="flipCard(7)">
+                <div class="flip-card-inner" id="card-7">
+                    <div class="flip-card-front bg-gradient-to-br from-red-500 to-pink-600 rounded-3xl p-8 text-white shadow-xl">
+                        <div class="flex items-center mb-4">
+                            <div class="w-12 h-12 bg-white bg-opacity-20 rounded-full flex items-center justify-center text-white font-bold text-xl mr-4">7</div>
+                            <svg class="w-10 h-10 text-white opacity-80" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12 2C6.48 2 2 6.48 2 12S6.48 22 12 22 22 17.52 22 12 17.52 2 12 2ZM10 17L5 12L6.41 10.59L10 14.17L17.59 6.58L19 8L10 17Z"/>
+                            </svg>
+                        </div>
+                        <h3 class="text-2xl font-bold mb-3">Lower the vehicle</h3>
+                        <p class="text-red-100">Carefully lower the vehicle and remove the hydraulic jack.</p>
+                    </div>
+                    <div class="flip-card-back bg-gradient-to-br from-red-600 to-pink-700 rounded-3xl p-8 text-white shadow-xl">
+                        <div class="flex items-center mb-4">
+                            <div class="w-12 h-12 bg-white bg-opacity-20 rounded-full flex items-center justify-center text-white font-bold text-xl mr-4">7</div>
+                            <svg class="w-10 h-10 text-white opacity-80" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12 2C6.48 2 2 6.48 2 12S6.48 22 12 22 22 17.52 22 12 17.52 2 12 2ZM10 17L5 12L6.41 10.59L10 14.17L17.59 6.58L19 8L10 17Z"/>
+                            </svg>
+                        </div>
+                        <h3 class="text-2xl font-bold mb-3">Baja el vehículo</h3>
+                        <p class="text-red-100">Baja cuidadosamente el vehículo y retira el gato hidráulico.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Instrucción 8 -->
+            <div class="flip-card cursor-pointer" onclick="flipCard(8)">
+                <div class="flip-card-inner" id="card-8">
+                    <div class="flip-card-front bg-gradient-to-br from-indigo-500 to-purple-600 rounded-3xl p-8 text-white shadow-xl">
+                        <div class="flex items-center mb-4">
+                            <div class="w-12 h-12 bg-white bg-opacity-20 rounded-full flex items-center justify-center text-white font-bold text-xl mr-4">8</div>
+                            <svg class="w-10 h-10 text-white opacity-80" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M9 16.17L4.83 12L3.41 13.41L9 19L21 7L19.59 5.59L9 16.17Z"/>
+                            </svg>
+                        </div>
+                        <h3 class="text-2xl font-bold mb-3">Tighten the lug nuts</h3>
+                        <p class="text-indigo-100">Use the lug wrench to tighten the lug nuts on the spare wheel securely.</p>
+                    </div>
+                    <div class="flip-card-back bg-gradient-to-br from-indigo-600 to-purple-700 rounded-3xl p-8 text-white shadow-xl">
+                        <div class="flex items-center mb-4">
+                            <div class="w-12 h-12 bg-white bg-opacity-20 rounded-full flex items-center justify-center text-white font-bold text-xl mr-4">8</div>
+                            <svg class="w-10 h-10 text-white opacity-80" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M9 16.17L4.83 12L3.41 13.41L9 19L21 7L19.59 5.59L9 16.17Z"/>
+                            </svg>
+                        </div>
+                        <h3 class="text-2xl font-bold mb-3">Aprieta las tuercas</h3>
+                        <p class="text-indigo-100">Usa la llave de ruedas para apretar bien las tuercas de la rueda de repuesto.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <style>
+            .flip-card {
+                background-color: transparent;
+                perspective: 1000px;
+                height: 280px;
+            }
+
+            .flip-card-inner {
+                position: relative;
+                width: 100%;
+                height: 100%;
+                text-align: center;
+                transition: transform 0.8s;
+                transform-style: preserve-3d;
+            }
+
+            .flip-card.flipped .flip-card-inner {
+                transform: rotateY(180deg);
+            }
+
+            .flip-card-front, .flip-card-back {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                -webkit-backface-visibility: hidden;
+                backface-visibility: hidden;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+            }
+
+            .flip-card-back {
+                transform: rotateY(180deg);
+            }
+
+            .flip-card:hover {
+                transform: scale(1.02);
+                transition: transform 0.3s ease;
+            }
+        </style>
+
+        <script>
+            function flipCard(cardNumber) {
+                const card = document.querySelector(`#card-${cardNumber}`).parentElement;
+                card.classList.toggle('flipped');
+            }
+        </script>
+
+        <!-- Decoración final -->
+        <div class="text-center mt-16">
+            <div class="flex justify-center space-x-4 mb-6">
+                <svg class="w-8 h-8 text-pink-400" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M12 21.35L10.55 20.03C5.4 15.36 2 12.27 2 8.5C2 5.41 4.42 3 7.5 3C9.24 3 10.91 3.81 12 5.08C13.09 3.81 14.76 3 16.5 3C19.58 3 22 5.41 22 8.5C22 12.27 18.6 15.36 13.45 20.03L12 21.35Z"/>
+                </svg>
+                <svg class="w-8 h-8 text-blue-400" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M12 2L13.09 8.26L20 9L13.09 9.74L12 16L10.91 9.74L4 9L10.91 8.26L12 2Z"/>
+                </svg>
+                <svg class="w-8 h-8 text-green-400" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M12 21.35L10.55 20.03C5.4 15.36 2 12.27 2 8.5C2 5.41 4.42 3 7.5 3C9.24 3 10.91 3.81 12 5.08C13.09 3.81 14.76 3 16.5 3C19.58 3 22 5.41 22 8.5C22 12.27 18.6 15.36 13.45 20.03L12 21.35Z"/>
+                </svg>
+            </div>
+            <p class="text-gray-500 text-sm">¡Siguiendo estos pasos cambiarás la rueda de forma segura! 🚗✨</p>
+        </div>
+    </div>
+<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'9767913740af7f2a',t:'MTc1NjQyMzUyMC4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>
